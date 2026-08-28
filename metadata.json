@@ -1,0 +1,6 @@
+{
+  "name": "OneLink",
+  "description": "Multi-user link-in-bio platform for creators, students, and freelancers to create and share their personalized bio and links.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

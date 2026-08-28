@@ -1,0 +1,215 @@
+{
+  "users": [
+    {
+      "id": "78b55fb1-48f3-4f0e-8fb4-ecaedce953c8",
+      "email": "bhanu@example.com",
+      "username": "bhanu",
+      "usernameLower": "bhanu",
+      "passwordHash": "eaf2974d9e3fa313cc44009d1935bc17b24aa1c326037844cac9eb04901bab3b6993924ef8053e6f6f06e2588e79447a5dd5b954cb2cc664fb0d1ea2bb6494c8",
+      "salt": "08bee838cf802e585e27376022b3abae",
+      "displayName": "Bhanu Varma",
+      "bio": "Full-stack builder, open-source enthusiast & tech explorer. Building the next generation of web tools 🚀",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
+      "theme": "midnight",
+      "pageViews": 144,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "31efe291-1441-4b90-87cb-38c8a99eb813",
+      "email": "sarah@example.com",
+      "username": "sarah_design",
+      "usernameLower": "sarah_design",
+      "passwordHash": "2e7825c7350048855ebc3ba3abcb3c43083e6272c9a8af985a364d493cb2447dd44d0acbef08ff5167f0e4ae9bb3d149144c028a28b7695be090224b21b615db",
+      "salt": "95a80218382320168177abd010b4c4b6",
+      "displayName": "Sarah Chen",
+      "bio": "Product Designer & Design System Architect. Creating joyful digital interfaces and mentoring designers ✨",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=80",
+      "theme": "lavender",
+      "pageViews": 98,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "a4eb1a0f-7d6e-4351-8c44-8f61abc45e34",
+      "email": "alex@example.com",
+      "username": "alex_photo",
+      "usernameLower": "alex_photo",
+      "passwordHash": "4cbbfd7ae2834bdd175b679c010feed766b7e9133302b7ed837836dd3a7a14233df78df84fb0c141872e14f86540e260876e1f5647db08c98cea0060e32f285a",
+      "salt": "0d9096f18c408a8d3739e49e63bfdb89",
+      "displayName": "Alex Rivera",
+      "bio": "Landscape & Street Photographer. Capturing moody golden hour light around the globe 📷",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
+      "theme": "sunset",
+      "pageViews": 215,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    }
+  ],
+  "links": [
+    {
+      "id": "2aaa1b8b-3709-46d6-b366-f7579cffb57d",
+      "userId": "78b55fb1-48f3-4f0e-8fb4-ecaedce953c8",
+      "title": "GitHub Projects & Repositories",
+      "url": "https://github.com",
+      "order": 4,
+      "icon": "github",
+      "isActive": true,
+      "clicks": 45,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "745a8601-f439-4255-a964-55ba760fc5ef",
+      "userId": "78b55fb1-48f3-4f0e-8fb4-ecaedce953c8",
+      "title": "Personal Portfolio & Case Studies",
+      "url": "https://example.com/portfolio",
+      "order": 3,
+      "icon": "globe",
+      "isActive": true,
+      "clicks": 38,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "65756191-1f0b-4229-bd41-dd6941bc8569",
+      "userId": "78b55fb1-48f3-4f0e-8fb4-ecaedce953c8",
+      "title": "Connect on LinkedIn",
+      "url": "https://linkedin.com",
+      "order": 2,
+      "icon": "linkedin",
+      "isActive": true,
+      "clicks": 29,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "6a7c52d2-e200-4ff5-ad83-88bced749f32",
+      "userId": "78b55fb1-48f3-4f0e-8fb4-ecaedce953c8",
+      "title": "Read my Tech Blog on Dev.to",
+      "url": "https://dev.to",
+      "order": 1,
+      "icon": "book",
+      "isActive": true,
+      "clicks": 19,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "50cda452-2f41-43f9-97d0-b03c7c5ff7b3",
+      "userId": "31efe291-1441-4b90-87cb-38c8a99eb813",
+      "title": "Figma Community UI Kits",
+      "url": "https://figma.com/@sarah",
+      "order": 0,
+      "icon": "figma",
+      "isActive": true,
+      "clicks": 52,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "71835745-c5a0-4c50-a61d-5e0b2da75d58",
+      "userId": "31efe291-1441-4b90-87cb-38c8a99eb813",
+      "title": "Dribbble Design Shots",
+      "url": "https://dribbble.com",
+      "order": 1,
+      "icon": "dribbble",
+      "isActive": true,
+      "clicks": 34,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "23bf5425-6de3-4fd5-acea-67c294b8453b",
+      "userId": "31efe291-1441-4b90-87cb-38c8a99eb813",
+      "title": "Design Mentorship on ADPList",
+      "url": "https://adplist.org",
+      "order": 2,
+      "icon": "sparkles",
+      "isActive": true,
+      "clicks": 12,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "030dd7d5-4207-45c8-90a0-0c5ef76b7f61",
+      "userId": "a4eb1a0f-7d6e-4351-8c44-8f61abc45e34",
+      "title": "2026 Print Shop & Lightroom Presets",
+      "url": "https://unsplash.com",
+      "order": 0,
+      "icon": "shopping-bag",
+      "isActive": true,
+      "clicks": 87,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "aeb57945-65d4-4e02-be0a-ea6253160d08",
+      "userId": "a4eb1a0f-7d6e-4351-8c44-8f61abc45e34",
+      "title": "Instagram Photo Feed",
+      "url": "https://instagram.com",
+      "order": 1,
+      "icon": "instagram",
+      "isActive": true,
+      "clicks": 64,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "38497450-3a77-421a-98f5-70b283501739",
+      "userId": "a4eb1a0f-7d6e-4351-8c44-8f61abc45e34",
+      "title": "Book a Photo Shoot",
+      "url": "https://calendly.com",
+      "order": 2,
+      "icon": "calendar",
+      "isActive": true,
+      "clicks": 22,
+      "createdAt": "2026-08-28T03:04:32.696Z",
+      "updatedAt": "2026-08-28T03:04:32.696Z"
+    },
+    {
+      "id": "c429a4da-92f7-43c8-83dc-44c2ba6c478c",
+      "userId": "78b55fb1-48f3-4f0e-8fb4-ecaedce953c8",
+      "title": "Valid Title",
+      "url": "https://ht!tp://invalid url",
+      "order": 0,
+      "icon": "globe",
+      "isActive": true,
+      "clicks": 0,
+      "createdAt": "2026-08-28T03:04:44.736Z",
+      "updatedAt": "2026-08-28T03:04:44.736Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "16fe5c44a0d83c7b25336f23d66ab7aac5b635ac5b63ddd12ede238fb4b80d9d",
+      "userId": "78b55fb1-48f3-4f0e-8fb4-ecaedce953c8",
+      "createdAt": "2026-08-28T03:04:44.660Z",
+      "expiresAt": "2026-09-27T03:04:44.660Z"
+    },
+    {
+      "token": "7f11529b8ac26560c4b3eb488795efe48836d79ebca4cef3b4b0602f4aa20e36",
+      "userId": "31efe291-1441-4b90-87cb-38c8a99eb813",
+      "createdAt": "2026-08-28T03:04:44.716Z",
+      "expiresAt": "2026-09-27T03:04:44.716Z"
+    },
+    {
+      "token": "6aeaca1c5d04afc5ff3bb78115d789f60114106de27e18b778d73aa4d8747024",
+      "userId": "78b55fb1-48f3-4f0e-8fb4-ecaedce953c8",
+      "createdAt": "2026-08-28T03:05:02.307Z",
+      "expiresAt": "2026-09-27T03:05:02.307Z"
+    },
+    {
+      "token": "4b7edc922d426c3af55cc4008debd449f9d3f5fbf45c5458b7506380d43ba422",
+      "userId": "31efe291-1441-4b90-87cb-38c8a99eb813",
+      "createdAt": "2026-08-28T03:05:02.384Z",
+      "expiresAt": "2026-09-27T03:05:02.384Z"
+    },
+    {
+      "token": "90e0ccabb2cf5e0a6a63dd943cfc2269a54be080ba944f3b5a5666f1f11666a0",
+      "userId": "78b55fb1-48f3-4f0e-8fb4-ecaedce953c8",
+      "createdAt": "2026-08-28T03:05:05.417Z",
+      "expiresAt": "2026-09-27T03:05:05.417Z"
+    }
+  ]
+}

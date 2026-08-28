@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 9999px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Neo-brutalist hard shadow utilities */
+  .shadow-pop {
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  }
+  .shadow-pop-sm {
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+  }
+  .shadow-pop-lg {
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  }
+  .shadow-pop-yellow {
+    box-shadow: 4px 4px 0px 0px #FFD600;
+  }
+  .shadow-pop-pink {
+    box-shadow: 4px 4px 0px 0px #FF80B5;
+  }
+  .shadow-pop-indigo {
+    box-shadow: 4px 4px 0px 0px #6366F1;
+  }
+}
+
+body {
+  background-color: #FFFDF5;
+  color: #1A1A1A;
+}
+
