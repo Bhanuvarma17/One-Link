@@ -76,8 +76,8 @@ function MainApp() {
     );
   }
 
-  // Check if it's a single slug public profile like /bhanu or /sarah_design
-  const slugMatch = currentPath.match(/^\/([a-zA-Z0-9_]+)\/?$/);
+  // Check if it's a single slug public profile like /bhanu, /sarah_design, /alex-rivera
+  const slugMatch = currentPath.match(/^\/([a-zA-Z0-9_-]+)\/?$/);
   if (slugMatch && !SYSTEM_ROUTES.has(path)) {
     const rawUsername = slugMatch[1];
     return <PublicProfilePage username={rawUsername} onNavigate={navigate} />;

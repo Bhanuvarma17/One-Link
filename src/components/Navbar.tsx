@@ -93,9 +93,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
                 <p className="text-xs font-black text-[#1A1A1A] leading-tight truncate max-w-[140px]">
                   {user.displayName || user.username}
                 </p>
-                <p className="text-[11px] font-bold text-slate-500 font-mono">
-                  onelink.bio/{user.username}
-                </p>
+                <button
+                  id="nav-username-slug-btn"
+                  onClick={() => onNavigate(`/${user.username}`)}
+                  title="View your public profile"
+                  className="text-[11px] font-bold text-slate-500 font-mono hover:text-black hover:underline text-right"
+                >
+                  {typeof window !== 'undefined' ? window.location.host : ''}/{user.username}
+                </button>
               </div>
 
               <div className="w-10 h-10 rounded-full border-2 border-black bg-[#FF80B5] flex items-center justify-center overflow-hidden shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">

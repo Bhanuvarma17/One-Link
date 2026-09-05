@@ -29,6 +29,7 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ user, onProfileUpd
 
   const [usernameStatus, setUsernameStatus] = useState<{ available?: boolean; error?: string }>({});
   const [isCheckingUsername, setIsCheckingUsername] = useState(false);
+  const [copiedUrl, setCopiedUrl] = useState(false);
 
   const [isSaving, setIsSaving] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
@@ -271,7 +272,7 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ user, onProfileUpd
               type="text"
               required
               value={username}
-              onChange={(e) => setUsername(e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, ''))}
+              onChange={(e) => setUsername(e.target.value.toLowerCase().replace(/[^a-z0-9_-]/g, ''))}
               placeholder="bhanu"
               className="w-full rounded-xl border-2 border-black bg-white pl-7 pr-3.5 py-2.5 text-sm font-mono font-bold text-neutral-900 shadow-2xs focus:outline-none focus:ring-2 focus:ring-[#FFD600]"
             />
@@ -282,16 +283,50 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ user, onProfileUpd
             <p className="text-[11px] font-bold text-slate-500 mt-1">Checking handle availability...</p>
           )}
           {usernameStatus.available === true && (
-            <p className="text-[11px] font-black text-emerald-600 mt-1">✓ Username is available!</p>
+            <p className="text-[11px] font-black text-emerald-600 mt-1">✓ Handle is available!</p>
           )}
           {usernameStatus.available === false && (
             <p className="text-[11px] font-black text-rose-600 mt-1">
               ✗ {usernameStatus.error || 'Username is not available'}
             </p>
           )}
-          {!isCheckingUsername && !usernameStatus.available && (
-            <p className="text-[11px] font-bold text-slate-500 mt-1">Your public URL: onelink.bio/{username || 'username'}</p>
-          )}
+
+          {/* Live Public URL Card */}
+          <div className="mt-2.5 rounded-xl border-2 border-black bg-[#FFFDF5] p-3 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] font-black uppercase tracking-wider text-slate-500">
+                Public URL (Main URL + /{username || 'username'})
+              </span>
+              <span className="text-[9px] font-black bg-[#FFD600] text-black px-1.5 py-0.5 rounded border border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]">
+                LIVE
+              </span>
+            </div>
+            <div className="flex items-center justify-between gap-2 mt-1.5">
+              <span className="font-mono text-xs font-black text-black break-all">
+                {typeof window !== 'undefined' ? `${window.location.origin}/${username || 'username'}` : `/${username || 'username'}`}
+              </span>
+              <button
+                type="button"
+                id="copy-editor-public-url-btn"
+                onClick={async () => {
+                  if (!username) return;
+                  try {
+                    await navigator.clipboard.writeText(`${window.location.origin}/${username}`);
+                    setCopiedUrl(true);
+                    setTimeout(() => setCopiedUrl(false), 2000);
+                  } catch {
+                    // Fallback
+                  }
+                }}
+                className="shrink-0 rounded-lg bg-[#FFD600] px-3 py-1 text-[11px] font-black text-black border border-black hover:bg-[#FFE033] active:translate-x-0.5 active:translate-y-0.5 transition-all shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]"
+              >
+                {copiedUrl ? 'Copied!' : 'Copy URL'}
+              </button>
+            </div>
+            <p className="text-[10px] font-bold text-slate-500 mt-1">
+              Your public bio page is instantly accessible by appending your username to this website&apos;s main URL.
+            </p>
+          </div>
         </div>
       </div>
 

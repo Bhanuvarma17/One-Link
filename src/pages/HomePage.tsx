@@ -71,13 +71,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               className="flex flex-col sm:flex-row items-center gap-2 rounded-2xl border-2 border-black bg-white p-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] focus-within:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all"
             >
               <div className="flex items-center pl-3 text-black font-mono text-sm w-full sm:w-auto">
-                <span className="text-black font-black">onelink.bio/</span>
+                <span className="text-black font-black whitespace-nowrap">
+                  {typeof window !== 'undefined' ? window.location.host : 'onelink.bio'}/
+                </span>
                 <input
                   id="claim-username-input"
                   type="text"
                   placeholder="yourname"
                   value={claimHandle}
-                  onChange={(e) => setClaimHandle(e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, ''))}
+                  onChange={(e) => setClaimHandle(e.target.value.toLowerCase().replace(/[^a-z0-9_-]/g, ''))}
                   className="w-full bg-transparent px-1 py-2 text-sm font-mono font-bold text-neutral-900 placeholder:text-neutral-400 focus:outline-none"
                 />
               </div>
